@@ -160,46 +160,46 @@ public class Logic
         }
     }
 
-    private static double rightTriangleArea(double l, double b) {
-        return 0.5 * l * b;
+    public static double rightTriangleArea(double base, double height) {
+        return 0.5 * height * base;
     }
 
-    private static double rightTrianglePerimeter(double l, double b) {
-        return (l + b + Math.sqrt(l*l + b*b));
+    public static double rightTrianglePerimeter(double base, double height) {
+        return (base + height + Math.sqrt(base * base + height * height));
     }
 
-    private static double circleArea(double r) {
-        return Math.PI * r *r;
+    public static double circleArea(double radius) {
+        return Math.PI * radius *radius;
     }
 
-    private static double circleCircumference(double r) {
-        return 2 * Math.PI * r;
+    public static double circleCircumference(double radius) {
+        return 2 * Math.PI * radius;
     }
 
-    private static double sphereSurfaceArea(double r) {
-        return 4 * Math.PI * r * r;
+    public static double sphereSurfaceArea(double radius) {
+        return 4 * Math.PI * radius * radius;
     }
 
-    private static double sphereVolume(double r) {
-        return 4/3 * Math.PI * r * r * r;
+    public static double sphereVolume(double radius) {
+        return 4.0/3.0 * Math.PI * radius * radius * radius;
     }
 
-    private static double rectangleArea(double l, double b) {
-        return l * b;
+    public static double rectangleArea(double length, double width) {
+        return length * width;
     }
 
-    private static double rectanglePerimeter(double l, double b) {
-        return 2 * (l + b);
+    public static double rectanglePerimeter(double length, double width) {
+        return 2 * (length + width);
     }
 
-    private static double boxSurfaceArea(double l, double b, double h) {
-        return 2 * (l*b + b*h + h*l);
+    public static double boxSurfaceArea(double length ,double width , double depth) {
+        return 2 * (length*width + width*depth + depth*length);
     }
 
     // TODO -- add your code here
-    public static double boxVolume(double l,double b, double h)
+    public static double boxVolume(double length ,double width , double depth)
     {
-        return l*b*h;
+        return length * width * depth;
     }
 
 }
