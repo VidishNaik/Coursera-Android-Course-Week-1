@@ -160,6 +160,46 @@ public class Logic
         }
     }
 
+    private static double rightTriangleArea(double l, double b) {
+        return 0.5 * l * b;
+    }
+
+    private static double rightTrianglePerimeter(double l, double b) {
+        return (l + b + Math.sqrt(l*l + b*b));
+    }
+
+    private static double circleArea(double r) {
+        return Math.PI * r *r;
+    }
+
+    private static double circleCircumference(double r) {
+        return 2 * Math.PI * r;
+    }
+
+    private static double sphereSurfaceArea(double r) {
+        return 4 * Math.PI * r * r;
+    }
+
+    private static double sphereVolume(double r) {
+        return 4/3 * Math.PI * r * r * r;
+    }
+
+    private static double rectangleArea(double l, double b) {
+        return l * b;
+    }
+
+    private static double rectanglePerimeter(double l, double b) {
+        return 2 * (l + b);
+    }
+
+    private static double boxSurfaceArea(double l, double b, double h) {
+        return 2 * (l*b + b*h + h*l);
+    }
+
     // TODO -- add your code here
+    public static double boxVolume(double l,double b, double h)
+    {
+        return l*b*h;
+    }
 
 }
